@@ -1,3 +1,48 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">FirstApp</string>
+
+    <!-- To be removed for ads testing  -->
+    <string name="tecno_y6_test_id" translatable="false">9FD33FFCC4B05BEB180BBF4410DB5D41</string>
+    <string name="notification" translatable="false"> Notification</string>
+
+    <color name="MainBack">@color/MainBackground</color>
+    <string name="app_id_bottom" translatable="false">ca-app-pub-5062612803466681~7986603712</string>
+    <string name="app_banner1" translatable="false">ca-app-pub-5062612803466681/8308546658</string>
+
+    <!--test  adds -->
+    <string name="app_id_test" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="app_banner2" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstial_test" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <!--end test ads -->
+
+    <string name="hint_text">Name</string>
+
+    <string name="topping">Topping</string>
+
+    <string name="pineapple">Pineapple</string>
+
+    <string name="iceCream">Ice Cream</string>
+
+    <string name="quantity">Quantity</string>
+
+    <string name="minus">-</string>
+
+    <string name="initialValue">0</string>
+    <string name="plus">+</string>
+    <string name="initialPrice">0</string>
+    <string name="OrderButton">order</string>
+    <string name="HeadingPrice"> Price </string>
+
+    <string name="thanks"> Thank you </string>
+    <string name="price">  <xliff:g id="price">%s</xliff:g> </string>
+    <string name="name">Name : <xliff:g id="name"> %s</xliff:g> </string>
+    <string name="coffee_order"> You have order <xliff:g id="number"> %d</xliff:g> coffee </string>
+    <string name="total_price">  Total price   </string>
+    <string name="contain_topping">You have a topping</string>
+    <string name="title_activity_botom_bar">BotomBar</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
 </resources>
