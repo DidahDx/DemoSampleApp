@@ -5,5 +5,9 @@
     <color name="colorAccent">#A100B2</color>
     <color name="MainBackground">#B000B2</color>
     <color name="button_color">#008FBF</color>
+    <color name="tan_background">#FFF7DA</color>
+    <color name="category_numbers">#FD8E09</color>
+    <color name="category_pharses">#878B8C</color>
+    <!--<color name="category_pharses">#16AFCA</color>-->
 
 </resources>

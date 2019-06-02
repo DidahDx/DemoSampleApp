@@ -3,6 +3,7 @@
 
     <!-- To be removed for ads testing  -->
     <string name="tecno_y6_test_id" translatable="false">9FD33FFCC4B05BEB180BBF4410DB5D41</string>
+    <string name="tecno_7cs_test_id" translatable="false"> sd</string>
     <string name="notification" translatable="false"> Notification</string>
 
     <color name="MainBack">@color/MainBackground</color>
@@ -44,5 +45,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_activity_phrases">Phrases</string>
+    <string name="title_activity_main22">Main22Activity</string>
 
 </resources>

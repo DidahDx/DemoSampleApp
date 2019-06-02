@@ -15,7 +15,7 @@
         android:padding="6dp"
         tools:context=".MainActivity">
 
-        <SearchView
+        <EditText
             android:id="@+id/name_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -167,23 +167,42 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="8dp">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:id="@+id/secondBtn"
-                android:text="Second"
-                android:layout_margin="8dp"/>
 
             <Button
                 android:id="@+id/bottom_bar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="Bottom"
-                android:layout_margin="8dp"/>
+                android:layout_margin="4dp"
+                android:text="Bottom" />
+
+            <Button
+                android:id="@+id/buttonP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Pharses" />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/secondBtn"
+                android:text="Second"
+                android:layout_margin="4dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/ThirdBtn"
+                android:text="Third"
+                android:layout_margin="4dp"/>
+
         </LinearLayout>
 
 

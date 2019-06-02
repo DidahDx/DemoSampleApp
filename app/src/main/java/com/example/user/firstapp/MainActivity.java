@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
        // AdView adView1=findViewById(R.id.adView2);
 
         MobileAds.initialize(this,getString(R.string.app_id_test));
-        AdRequest adRequest=new AdRequest.Builder().addTestDevice(getString(R.string.tecno_y6_test_id)).build();
+        AdRequest adRequest=new AdRequest.Builder().build();
            // adView1.loadAd(adRequest);
             adView.loadAd(adRequest);
 
-            TextView second=findViewById(R.id.secondBtn);
+            Button second=findViewById(R.id.secondBtn);
             second.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
@@ -52,7 +54,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-        TextView bottom=findViewById(R.id.bottom_bar);
+        Button third=findViewById(R.id.ThirdBtn);
+        third.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(i);
+            }
+        });
+
+        Button bottom=findViewById(R.id.bottom_bar);
         bottom.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -61,6 +72,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        Button ph=findViewById(R.id.buttonP);
+        ph.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivity.this,Pharses.class);
+                startActivity(i);
+            }
+        });
     }
 
 
@@ -129,11 +150,11 @@ public class MainActivity extends AppCompatActivity {
 
         price.setText("$" + this.price(number) );
         TextView order=findViewById(R.id.order);
-        SearchView text=findViewById(R.id.name_field);
-            text.setQueryHint("search");
+        EditText text=findViewById(R.id.name_field);
 
 
-        CharSequence name=text.getQuery();
+
+        String name=text.getText().toString();
 
         if (topping || ice){
           message=getResources().getString(R.string.name, name)+"\n"+ getString(R.string.coffee_order,number) +
